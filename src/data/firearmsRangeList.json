@@ -1,0 +1,236 @@
+[
+    {
+        "type": "hop",
+        "label": "Hold-out Pistol",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 5
+            },
+            {
+                "type": "medium",
+                "min": 6,
+                "max": 15
+            },
+            {
+                "type": "long",
+                "min": 16,
+                "max": 30
+            },
+            {
+                "type": "extreme",
+                "min": 31,
+                "max": 50
+            }
+        ]
+    },
+    {
+        "type": "lip",
+        "label": "Light Pistol",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 5
+            },
+            {
+                "type": "medium",
+                "min": 6,
+                "max": 15
+            },
+            {
+                "type": "long",
+                "min": 16,
+                "max": 30
+            },
+            {
+                "type": "extreme",
+                "min": 31,
+                "max": 50
+            }
+        ]
+    },
+    {
+        "type": "hvp",
+        "label": "Heavy Pistol",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 5
+            },
+            {
+                "type": "medium",
+                "min": 6,
+                "max": 20
+            },
+            {
+                "type": "long",
+                "min": 21,
+                "max": 40
+            },
+            {
+                "type": "extreme",
+                "min": 41,
+                "max": 60
+            }
+        ]
+    },
+    {
+        "type": "smg",
+        "label": "SMG",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 10
+            },
+            {
+                "type": "medium",
+                "min": 11,
+                "max": 40
+            },
+            {
+                "type": "long",
+                "min": 41,
+                "max": 80
+            },
+            {
+                "type": "extreme",
+                "min": 81,
+                "max": 150
+            }
+        ]
+    },
+    {
+        "type": "tsr",
+        "label": "Taser",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 5
+            },
+            {
+                "type": "medium",
+                "min": 6,
+                "max": 10
+            },
+            {
+                "type": "long",
+                "min": 11,
+                "max": 12
+            },
+            {
+                "type": "extreme",
+                "min": 13,
+                "max": 15
+            }
+        ]
+    },
+    {
+        "type": "shg",
+        "label": "Shotgun",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 10
+            },
+            {
+                "type": "medium",
+                "min": 11,
+                "max": 20
+            },
+            {
+                "type": "long",
+                "min": 21,
+                "max": 50
+            },
+            {
+                "type": "extreme",
+                "min": 51,
+                "max": 100
+            }
+        ]
+    },
+    {
+        "type": "spr",
+        "label": "Sporting Rifle",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 100
+            },
+            {
+                "type": "medium",
+                "min": 101,
+                "max": 250
+            },
+            {
+                "type": "long",
+                "min": 251,
+                "max": 500
+            },
+            {
+                "type": "extreme",
+                "min": 501,
+                "max": 750
+            }
+        ]
+    },
+    {
+        "type": "snr",
+        "label": "Sniper Rifle",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 150
+            },
+            {
+                "type": "medium",
+                "min": 151,
+                "max": 300
+            },
+            {
+                "type": "long",
+                "min": 301,
+                "max": 700
+            },
+            {
+                "type": "extreme",
+                "min": 701,
+                "max": 1000
+            }
+        ]
+    },
+    {
+        "type": "asr",
+        "label": "Assault Rifle",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 50
+            },
+            {
+                "type": "medium",
+                "min": 51,
+                "max": 150
+            },
+            {
+                "type": "long",
+                "min": 151,
+                "max": 350
+            },
+            {
+                "type": "extreme",
+                "min": 351,
+                "max": 550
+            }
+        ]
+    }
+]

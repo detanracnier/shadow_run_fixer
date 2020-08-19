@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import wallpaper from './images/wallpaper.jpg';
+import RangedCombatAssist from './components/combatAssist/rangedCombatAssist';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+
+const RangerCombatAssist = () => {
+  return <RangedCombatAssist />;
+};
+
+const Home = () => {
+  return <div className="app_wallpaper_wrapper"><img className="app_wallpaper" alt="" src={wallpaper} /></div>;
+};
+
+const linkStyle = {
+  color: '#ffffff',
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+          <nav>
+              <ul>
+                  <li className="app_link">
+                      <Link style={linkStyle} to='/'>Home</Link>
+                  </li>
+                  <li className="app_link">
+                      <Link style={linkStyle} to='/ranged_combat_assist'>Ranged Combat Assist</Link>
+                  </li>
+              </ul>
+          </nav>
+
+          <Route path='/' exact component={Home} />
+          <Route path='/ranged_combat_assist' component={RangerCombatAssist} />
+      </div>
+    </Router>
   );
 }
 

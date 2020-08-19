@@ -1,0 +1,158 @@
+[
+    {
+        "type": "lmg",
+        "label": "Light Machine Gun",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 75
+            },
+            {
+                "type": "medium",
+                "min": 76,
+                "max": 200
+            },
+            {
+                "type": "long",
+                "min": 201,
+                "max": 400
+            },
+            {
+                "type": "extreme",
+                "min": 401,
+                "max": 800
+            }
+        ]
+    },
+    {
+        "type": "mmg",
+        "label": "Medium Machine Gun",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 80
+            },
+            {
+                "type": "medium",
+                "min": 81,
+                "max": 250
+            },
+            {
+                "type": "long",
+                "min": 251,
+                "max": 750
+            },
+            {
+                "type": "extreme",
+                "min": 751,
+                "max": 1200
+            }
+        ]
+    },
+    {
+        "type": "hmg",
+        "label": "Heavy Machine Gun",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 80
+            },
+            {
+                "type": "medium",
+                "min": 81,
+                "max": 250
+            },
+            {
+                "type": "long",
+                "min": 251,
+                "max": 800
+            },
+            {
+                "type": "extreme",
+                "min": 801,
+                "max": 1500
+            }
+        ]
+    },
+    {
+        "type": "asc",
+        "label": "Assault Cannon",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 0,
+                "max": 100
+            },
+            {
+                "type": "medium",
+                "min": 101,
+                "max": 300
+            },
+            {
+                "type": "long",
+                "min": 301,
+                "max": 900
+            },
+            {
+                "type": "extreme",
+                "min": 901,
+                "max": 2400
+            }
+        ]
+    },
+    {
+        "type": "gnl",
+        "label": "Grenade Launcher",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 5,
+                "max": 50
+            },
+            {
+                "type": "medium",
+                "min": 51,
+                "max": 100
+            },
+            {
+                "type": "long",
+                "min": 101,
+                "max": 150
+            },
+            {
+                "type": "extreme",
+                "min": 151,
+                "max": 300
+            }
+        ]
+    },
+    {
+        "type": "msl",
+        "label": "Missile Launcher",
+        "rangeList": [
+            {
+                "type": "short",
+                "min": 20,
+                "max": 150
+            },
+            {
+                "type": "medium",
+                "min": 151,
+                "max": 450
+            },
+            {
+                "type": "long",
+                "min": 451,
+                "max": 1200
+            },
+            {
+                "type": "extreme",
+                "min": 1201,
+                "max": 3000
+            }
+        ]
+    }
+]

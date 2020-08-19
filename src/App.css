@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+li.app_link {
+  border: solid;
+  border-width: 1px;
+  background-color: #333333;
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  list-style: none;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div.app_wallpaper_wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+img.app_wallpaper {
+  max-width: 100%;
+  height: auto;
+}

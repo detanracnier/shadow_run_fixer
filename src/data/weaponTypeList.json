@@ -1,0 +1,74 @@
+[
+    {
+        "type":"pistols",
+        "list": [
+            "Hold-out Pistol",
+            "Light Pistol",
+            "Heavy Pistol",
+            "Taser"
+        ]
+    },
+    {
+        "type":"SMG",
+        "list": [
+            "SMG"
+        ]
+    },
+    {
+        "type":"rifles",
+        "list": [
+            "Sporting Rifle",
+            "Sniper Rifle"
+        ]
+    },
+    {
+        "type":"assault rifles",
+        "list": [
+            "Assault Rifle"
+        ]
+    },
+    {
+        "type":"shotguns",
+        "list": [
+            "Shotgun"
+        ]
+    },
+    {
+        "type":"laser weapons",
+        "list": [
+
+        ]
+    },
+    {
+        "type":"throwing weapons",
+        "list": [
+            "Throwing Knife",
+            "Shuriken"
+        ]
+    },
+    {
+        "type":"projectile weapons",
+        "list": [
+            "Bow",
+            "Light Crossbow",
+            "Medium Crossbow",
+            "Heavy Crossbow"
+        ]
+    },
+    {
+        "type":"heavy weapons",
+        "list": [
+            "Light Machine Gun",
+            "Medium Machine Gun",
+            "Heavy Machine Gun",
+            "Assault Cannon"
+        ]
+    },
+    {
+        "type":"launcher weapons",
+        "list": [
+            "Grenade Launcher",
+            "Missile Launcher"
+        ]
+    }
+]

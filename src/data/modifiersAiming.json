@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Not Aiming",
+        "value": 0,
+        "description": "You are not aiming"
+    },
+    {
+        "label": "Aimed shot",
+        "value": -1,
+        "description": "Spend one simple action aiming"
+    },
+    {
+        "label": "Aimed shot x 2",
+        "value": -2,
+        "description": "Spend two simple actions aiming"
+    },
+    {
+        "label": "Called shot",
+        "value": 4,
+        "description": "Attacking a specific bodypart"
+    }
+]

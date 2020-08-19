@@ -1,0 +1,104 @@
+[
+    {
+        "type": "melee",
+        "label": "Attacker not in melee combat",
+        "value": 2,
+        "description": "You are not in melee combat"
+    },
+    {
+        "type": "melee",
+        "label": "Attacker in melee combat x 1",
+        "value": 2,
+        "description": "You are in melee with 1 opponent"
+    },
+    {
+        "type": "melee",
+        "label": "Attacker in melee combat x 2",
+        "value": 4,
+        "description": "You are in melee with 2 opponents"
+    },
+    {
+        "type": "melee",
+        "label": "Attacker in melee combat x 3",
+        "value": 6,
+        "description": "You are in melee with 3 opponents"
+    },
+    {
+        "type": "movement",
+        "label": "Attacker stationary",
+        "value": 0,
+        "description": "You are not moving"
+    },
+    {
+        "type": "movement",
+        "label": "Attacker walking",
+        "value": 1,
+        "description": "You are walking"
+    },
+    {
+        "type": "movement",
+        "label": "Attacker walking (difficult ground)",
+        "value": 2,
+        "description": "You are walking on difficult ground"
+    },
+    {
+        "type": "movement",
+        "label": "Attacker running",
+        "value": 4,
+        "description": "You are running"
+    },
+    {
+        "type": "movement",
+        "label": "Attacker running (difficult ground)",
+        "value": 6,
+        "description": "You are running on difficult ground"
+    },
+    {
+        "type": "damaged (wound)",
+        "label": "Attacker is not wounded",
+        "value": 0,
+        "description": "You are not wounded"
+    },
+    {
+        "type": "damaged (wound)",
+        "label": "Attacker wounded lightly",
+        "value": 1,
+        "description": "You are wounded lightly"
+    },
+    {
+        "type": "damaged (wound)",
+        "label": "Attacker wounded moderately",
+        "value": 2,
+        "description": "You are wounded moderately"
+    },
+    {
+        "type": "damaged (wound)",
+        "label": "Attacker wounded seriously",
+        "value": 3,
+        "description": "You are wounded seriously"
+    },
+    {
+        "type": "damaged (stun)",
+        "label": "Attacker is not stunned",
+        "value": 0,
+        "description": "You are not stunned"
+    },
+    {
+        "type": "damaged (stun)",
+        "label": "Attacker stunned lightly",
+        "value": 1,
+        "description": "You are stunned lightly"
+    },
+    {
+        "type": "damaged (stun)",
+        "label": "Attacker stunned moderately",
+        "value": 2,
+        "description": "You are stunned moderately"
+    },
+    {
+        "type": "damaged (stun)",
+        "label": "Attacker stunned seriously",
+        "value": 3,
+        "description": "You are stunned seriously"
+    }
+]

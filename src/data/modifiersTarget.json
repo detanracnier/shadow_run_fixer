@@ -1,0 +1,17 @@
+[
+    {
+        "label": "Target stationary",
+        "value": -1,
+        "description": "Target is stationary"
+    },
+    {
+        "label": "Target Walking",
+        "value": 0,
+        "description": "Target is Walking"
+    },
+    {
+        "label": "Target running",
+        "value": 2,
+        "description": "Target is running"
+    }
+]
