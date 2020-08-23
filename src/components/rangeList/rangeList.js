@@ -5,10 +5,12 @@ import impactRangeList from '../../data/impactRangeList.json';
 import TargetNumber from '../targetNumber/targetNumber';
 import { useSelector, useDispatch } from 'react-redux';
 import { rangeButtonClicked, rangeHeaderClicked, strengthInputChanged } from '../../actions/rangeList';
+import { combatAssistMenuButtonClicked } from '../../actions/combatAssist'
 import './rangeList.scss';
 import '../combatAssist/combatAssist.scss';
 
 export default function RangeList() {
+    const currentMenuIndex = useSelector(state => state.rangedCombatAssist.activeMenuIndex)
     const activeRange = useSelector(state => state.rangeList.activeRange);
     const playerStrength = useSelector(state => state.rangeList.playerStrength);
     const activeWeaponList = useSelector(state => state.rangeList.activeWeaponList);
@@ -45,6 +47,14 @@ export default function RangeList() {
     }
     return(
         <React.Fragment>
+            <div className="menu_button_disabled">
+                &lt;&lt;Previous
+            </div>
+            <div className={activeRange === '' ? "menu_button_disabled" : "menu_button"} onClick={() => {
+                dispatch(combatAssistMenuButtonClicked(currentMenuIndex + 1))
+            }}>
+                Next&gt;&gt;
+            </div>
             <div className="instructions">Select your targets range</div>
             <TargetNumber />
             <div className='contact'>
@@ -79,8 +89,8 @@ export default function RangeList() {
                                 </div>
                             </td>
                             <td colSpan='2'>
-                                <label for="strength"><span className="tiny_text">For projectiles</span><br />Input your strength: </label>
-                                <input className="input_text" type="text" id="strengthInput" name="strength" onChange={(event) => {
+                                <label><span className="tiny_text">For projectiles</span><br />Input your strength: </label>
+                                <input className="input_text" type="text" id="strengthInput" name="strength" value={playerStrength} onChange={(event) => {
                                     const value = event.target.value;
                                     if(!isNaN(value)){
                                         dispatch(strengthInputChanged(value))

@@ -1,0 +1,308 @@
+[
+    {
+        "type": "SELECT WEAPON",
+        "weapon_list": [
+            {
+                "label":"SELECT WEAPON",
+                "power": 0,
+                "damage": 0
+            }
+        ]
+    },
+    {
+        "type": "Hold-out Pistol",
+        "weapon_list": [
+            {
+                "label":"Streetline Special",
+                "power": 4,
+                "damage": 0
+            },
+            {
+                "label":"Walther Palm Pistol",
+                "power": 4,
+                "damage": 0
+            }
+        ]
+    },
+    {
+        "type": "Light Pistol",
+        "weapon_list": [
+            {
+                "label":"Beretta Model 101T",
+                "power": 6,
+                "damage": 0
+            },
+            {
+                "label":"Colt American L36",
+                "power": 6,
+                "damage": 0
+            },
+            {
+                "label":"Fichetti Security 500",
+                "power": 6,
+                "damage": 0
+            },
+            {
+                "label":"Fichetti Security 500a",
+                "power": 6,
+                "damage": 0
+            },
+            {
+                "label":"Ceska Black Scorpion",
+                "power": 6,
+                "damage": 0
+            }
+        ]
+    },
+    {
+        "type": "Heavy Pistol",
+        "weapon_list": [
+            {
+                "label":"Ares Predator",
+                "power": 9,
+                "damage": 1
+            },
+            {
+                "label":"Ares Viper Slivergun",
+                "power": 9,
+                "damage": 2
+            },
+            {
+                "label":"Browning Max-Power",
+                "power": 9,
+                "damage": 1
+            },
+            {
+                "label":"Remington Roomsweeper",
+                "power": 9,
+                "damage": 2
+            },
+            {
+                "label":"Ruger Super Warhawk",
+                "power": 10,
+                "damage": 1
+            }
+        ]
+    },
+    {
+        "type": "SMG",
+        "weapon_list": [
+            {
+                "label":"AK-97 SMG/Carbine",
+                "power": 6,
+                "damage": 1
+            },
+            {
+                "label":"Heckler & Koch HK227",
+                "power": 7,
+                "damage": 1
+            },
+            {
+                "label":"HK227-S",
+                "power": 7,
+                "damage": 1
+            },
+            {
+                "label":"Ingram Smartgun",
+                "power": 7,
+                "damage": 1
+            },
+            {
+                "label":"Uzi III",
+                "power": 6,
+                "damage": 1
+            }
+        ]
+    },
+    {
+        "type": "Taser",
+        "weapon_list": [
+            {
+                "label":"Defiance Super Shock",
+                "power": 10,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "type": "Shotgun",
+        "weapon_list": [
+            {
+                "label":"Defiance T-250",
+                "power": 10,
+                "damage": 2
+            },
+            {
+                "label":"Enfield AS-7",
+                "power": 8,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "type": "Sporting Rifle",
+        "weapon_list": [
+            {
+                "label":"Remington 750",
+                "power": 7,
+                "damage": 2
+            },
+            {
+                "label":"Remington 950",
+                "power": 9,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "type": "Sniper Rifle",
+        "weapon_list": [
+            {
+                "label":"Ranger Arms SM-3",
+                "power": 14,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "type": "Assault Rifle",
+        "weapon_list": [
+            {
+                "label":"AK-97",
+                "power": 8,
+                "damage": 1
+            },
+            {
+                "label":"AK-98",
+                "power": 8,
+                "damage": 1
+            },
+            {
+                "label":"FN HAR",
+                "power": 8,
+                "damage": 1
+            }
+        ]
+    },
+    {
+        "label": "Light Machine Gun",
+        "weapon_list": [
+            {
+                "label":"Ingram Valiant",
+                "power": 7,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "label": "Medium Machine Gun",
+        "weapon_list": [
+
+        ]
+    },
+    {
+        "label": "Heavy Machine Gun",
+        "weapon_list": [
+            {
+                "label":"RPK HMG",
+                "power": 10,
+                "damage": 2
+            },
+            {
+                "label":"Ultimax MMG",
+                "power": 9,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "label": "Assault Cannon",
+        "weapon_list": [
+             {
+                "label":"Vigorous Assault Cannon",
+                "power": 18,
+                "damage": 3
+            }
+        ]
+    },
+    {
+        "label": "Grenade Launcher",
+        "weapon_list": [
+            {
+                "label":"Ares Antioch",
+                "power": 10,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "label": "Missile Launcher",
+        "weapon_list": [
+            {
+                "label":"IWS Multi-Launcher",
+                "power": 16,
+                "damage": 3
+            }
+        ]
+    },
+    {
+        "label": "Bow",
+        "rangeList": [
+            {
+                "label":"Bow",
+                "power": "Attackers strength + 2",
+                "damage": 1
+            }
+        ]
+    },
+    {
+        "label": "Light Crossbow",
+        "rangeList": [
+            {
+                "label":"Light Crossbow",
+                "power": 6,
+                "damage": 0
+            }
+        ]
+    },
+    {
+        "label": "Medium Crossbow",
+        "rangeList": [
+            {
+                "label":"Madium Crossbow",
+                "power": 6,
+                "damage": 1
+            }
+        ]
+    },
+    {
+        "label": "Heavy Crossbow",
+        "rangeList": [
+            {
+                "label":"Heavy Crossbow",
+                "power": 6,
+                "damage": 2
+            }
+        ]
+    },
+    {
+        "label": "Throwing Knife",
+        "rangeList": [
+            {
+                "label":"Throwing Knife",
+                "power": "Attackers strength",
+                "damage": 0
+            }
+        ]
+    },
+    {
+        "label": "Shuriken",
+        "rangeList": [
+            {
+                "label":"Shuriken",
+                "power": "Attackers strength",
+                "damage": 0
+            }
+        ]
+    }
+]

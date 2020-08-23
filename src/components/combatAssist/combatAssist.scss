@@ -9,3 +9,36 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
+.menu_button {
+    display: inline-block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:49%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    border-left: solid;
+    border-right: solid;
+    border-color: #ffffff;
+}
+
+.menu_button_disabled {
+    display: inline-block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    pointer-events: none;
+    width:49%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+    background-color: #333333;
+    border-left: solid;
+    border-right: solid;
+    border-color: #ffffff;
+}

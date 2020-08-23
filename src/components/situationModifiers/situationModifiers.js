@@ -6,7 +6,7 @@ import modifiersAttacker from '../../data/modifiersAttacker.json';
 import modifiersRecoil from '../../data/modifiersRecoil.json';
 import modifiersTarget from '../../data/modifiersTarget.json';
 import modifiersVisibility from '../../data/modifiersVisibility.json';
-
+import { combatAssistMenuButtonClicked } from '../../actions/combatAssist'
 import {
 	recoilDropdownChanged,
 	recoilMultiplierClicked,
@@ -31,6 +31,7 @@ import '../combatAssist/combatAssist.scss';
 
 
 export default function SituationModifiers() {
+	const currentMenuIndex = useSelector(state => state.rangedCombatAssist.activeMenuIndex)
 	const dispatch = useDispatch();
 	const modifierUI = useSelector(state => state.modifiersUI);
 
@@ -42,6 +43,16 @@ export default function SituationModifiers() {
 
 	return(
 		<React.Fragment>
+			<div className="menu_button" onClick={() => {
+                dispatch(combatAssistMenuButtonClicked(currentMenuIndex - 1))
+            }}>
+                &lt;&lt;Previous
+            </div>
+            <div className="menu_button" onClick={() => {
+                dispatch(combatAssistMenuButtonClicked(currentMenuIndex + 1))
+            }}>
+                Next&gt;&gt;
+            </div>
 			<div className="instructions">Select which modifiers apply</div>
 			<TargetNumber />
 			<div className='situationModifiers_container'>

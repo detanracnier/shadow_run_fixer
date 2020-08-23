@@ -2,56 +2,67 @@
     {
         "label": "No recoil",
         "value": 0,
+        "weapon_power_increase": 0,
         "description": "You have no recoil"
     },
     {
         "label": "Recoil, semi-automatic",
         "value": 1,
+        "weapon_power_increase": 0,
         "description": "Second shot this Combat Phase"
     },
     {
         "label": "Recoil, burst-fire x 1",
         "value": 3,
+        "weapon_power_increase": 3,
         "description": "First burst-fire this Combat Phase"
     },
     {
         "label": "Recoil, burst-fire x 2",
         "value": 6,
+        "weapon_power_increase": 3,
         "description": "Second burst-fire this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 4",
         "value": 4,
+        "weapon_power_increase": 4,
         "description": "Firing full-auto 4 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 5",
         "value": 5,
+        "weapon_power_increase": 5,
         "description": "Firing full-auto 5 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 6",
         "value": 6,
+        "weapon_power_increase": 6,
         "description": "Firing full-auto 6 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 7",
         "value": 7,
+        "weapon_power_increase": 7,
         "description": "Firing full-auto 7 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 8",
         "value": 8,
+        "weapon_power_increase": 8,
         "description": "Firing full-auto 8 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 9",
         "value": 9,
+        "weapon_power_increase": 9,
         "description": "Firing full-auto 9 rounds this Combat Phase"
     },
     {
         "label": "Recoil, full-auto x 10",
         "value": 10,
+        "weapon_power_increase": 10,
         "description": "Firing full-auto 10 rounds this Combat Phase"
     }
 ]

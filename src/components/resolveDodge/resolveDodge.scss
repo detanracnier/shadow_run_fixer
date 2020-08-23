@@ -1,0 +1,22 @@
+.dodge_target_number_container {
+    margin: auto;
+    width: 20%;
+    border: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.dodge_target_number_label {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.dodge_target_number {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
