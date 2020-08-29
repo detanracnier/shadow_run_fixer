@@ -1,0 +1,303 @@
+$light: #efefef;
+$primary: #333333;
+$secondary: #454545;
+$active: #00CDCD;
+
+.primary_container {
+    background: $primary;
+    color: $light;
+}
+
+
+
+.menu_nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu_button {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color:$primary;
+    border-left: solid;
+    border-right: solid;
+    border-color: #ffffff;
+}
+
+.menu_button_disabled {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+    background-color: #333333;
+    border-left: solid;
+    border-right: solid;
+    border-color: #ffffff;
+}
+
+.instructions_container {
+    display: flex;
+    border: solid;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+//.................................
+// ..........Target Number.........
+//.................................
+
+.target_number_container {
+    margin: 5px;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    border: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.target_number_label {
+    font-size: 1em;
+    text-align: center;
+}
+
+.target_number {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+//.................................
+// ..........Table.................
+//.................................
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    height: 40px;
+    padding: 0 0px;
+    border:none;
+
+    &.keep-left {
+        padding-left: 10px;
+        text-align: left;
+        cursor: default;
+    }
+}
+
+td.active {
+    background: $active;
+    color: black;
+    .rangelist_button {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+//2 items in table row
+th:first-child:nth-last-child(n + 2) {
+    width:auto;
+}
+th:first-child:nth-last-child(n + 2) ~ th {
+    width: 60%;
+}
+
+//3 items in table row
+th:first-child:nth-last-child(n + 3) {
+    width:auto;
+}
+th:first-child:nth-last-child(n + 3) ~ th {
+    width: 30%;
+}
+
+//4 items in table row
+th:first-child:nth-last-child(n + 4) {
+    width:auto;
+}
+th:first-child:nth-last-child(n + 4) ~ th {
+    width: 20%;
+}
+
+//5 items in table row
+th:first-child:nth-last-child(n + 5) {
+    width:auto;
+}
+th:first-child:nth-last-child(n + 5) ~ th {
+    width: 15%;
+}
+
+//6 items in table row
+th:first-child:nth-last-child(n + 6) {
+    width:auto;
+}
+th:first-child:nth-last-child(n + 6) ~ th {
+    width: 12%;
+}
+
+tbody {
+    tr:nth-child(odd) {
+        background: $secondary;
+    }
+}
+
+//......................................
+// ..........Range List.................
+//......................................
+
+.rangelist_button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    color: $light;
+}
+
+.range_list_tab {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-top-right-radius: 15px;
+}
+
+.active_tab {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-top-right-radius: 15px;
+    background: $active;
+    color: black;
+}
+
+//......................................
+// ..........Success Counter............
+//......................................
+
+.success_container {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.decrease_button {
+    display: inline;
+    font-size: 5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    border:solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: #333333;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.increase_button {
+    display: inline;
+    font-size: 5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    border:solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #333333;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.success_label {
+    display: inline-block;
+    font-size: 5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border: solid;
+}
+
+//...............................
+//...............................
+
+.resolve_damage_input_container {
+    margin: auto;
+    margin-bottom: 1em;
+    width: max-content;
+    & form {
+        margin: auto;
+        width: max-content;
+        margin-bottom: 1em;
+    }
+}
+
+//...............................
+//...............................
+
+input {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.tiny_text {
+    font-size: 60%;
+}
+
+.large_text{
+    font-size: 120%;
+}
+
+.center_text {
+    text-align: center;;
+}
+
+.display_inline {
+    display: inline;
+}
+
+.display_inline_block {
+    display: inline-block;
+}
+
+thead.no_height th {
+    height:0%;
+}
+
+#dropdown_width {
+    width: 30%;
+}

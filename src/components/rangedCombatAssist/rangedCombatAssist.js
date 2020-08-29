@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import RangeList from '../rangeList/rangeList';
-import SituationModifiers from '../situationModifiers/situationModifiers';
-import ResolveAttack from '../resolveAttack/resolveAttack';
-import ResolveDodge from '../resolveDodge/resolveDodge';
-import ResolveDamageResistance from '../resolveDamageResistance/resolveDamageResistance';
-import ResolveDamage from '../resolveDamage/resolveDamage';
-import './combatAssist.scss';
+import RangeList from './rangeList/rangeList';
+import SituationModifiers from './situationModifiers/situationModifiers';
+import ResolveAttack from './resolveAttack/resolveAttack';
+import ResolveDodge from './resolveDodge/resolveDodge';
+import ResolveDamageResistance from './resolveDamageResistance/resolveDamageResistance';
+import ResolveDamage from './resolveDamage/resolveDamage';
+import './rangedCombatAssist.scss';
 
 export default function RangedCombatAssist() {
     const menuList = [

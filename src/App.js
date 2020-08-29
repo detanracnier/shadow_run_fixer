@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import wallpaper from './images/wallpaper.jpg';
-import RangedCombatAssist from './components/combatAssist/rangedCombatAssist';
+import RangedCombatAssist from './components/rangedCombatAssist/rangedCombatAssist';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 const RangerCombatAssist = () => {
