@@ -6,7 +6,7 @@ const SituationModifiersUIReducer = (state = {
     smartlink: false,
     smartgoggles: false,
     lasersight: false,
-    recoilDropdown: "No recoil",
+    recoilDropdown: "You have no recoil",
     attackerMovementDropdown: "You are not moving",
     attackerStunDropdown: "You are not stunned",
     attackerWoundDropdown: "You are not wounded",

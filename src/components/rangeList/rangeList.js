@@ -30,7 +30,7 @@ export default function RangeList() {
         return(
             <td className={activeRange === name + range.type ? 'active' : ''} key={name + range.type}>
                 <button className="rangelist_button" onClick={() => {
-                    dispatch(rangeButtonClicked(name + range.type, getRangeModifier(range.type)))
+                    dispatch(rangeButtonClicked(name + range.type, getRangeModifier(range.type),name))
                 }}>{range.min * playerStrength === 0 ? 0 : range.min * playerStrength + 1} - {range.max * playerStrength}</button>
             </td>
         )

@@ -5,6 +5,7 @@ import SituationModifiers from '../situationModifiers/situationModifiers';
 import ResolveAttack from '../resolveAttack/resolveAttack';
 import ResolveDodge from '../resolveDodge/resolveDodge';
 import ResolveDamageResistance from '../resolveDamageResistance/resolveDamageResistance';
+import ResolveDamage from '../resolveDamage/resolveDamage';
 import './combatAssist.scss';
 
 export default function RangedCombatAssist() {
@@ -13,7 +14,8 @@ export default function RangedCombatAssist() {
         SituationModifiers,
         ResolveAttack,
         ResolveDodge,
-        ResolveDamageResistance
+        ResolveDamageResistance,
+        ResolveDamage
     ];
     const currentMenuIndex = useSelector(state => state.rangedCombatAssist.activeMenuIndex)
     const CurrentMenu = menuList[currentMenuIndex];

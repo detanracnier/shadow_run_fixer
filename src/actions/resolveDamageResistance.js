@@ -24,3 +24,12 @@ export const ResolveDamageResistanceWeaponChanged = (weapon) => {
         }
     }
 }
+
+export const ResolveDamageResistanceArmorChanged = (armor) => {
+    return {
+        type: "RESOLVE_DAMAGE_RESISTANCE_ARMOR_CHANGED",
+        payload: {
+            armor
+        }
+    }
+}

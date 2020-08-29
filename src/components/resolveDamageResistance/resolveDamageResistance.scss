@@ -1,5 +1,6 @@
 .resolve_damage_target_number_container {
     margin: auto;
+    margin-bottom: 1em;
     width: 20%;
     border: solid;
     border-radius: 10px;
@@ -27,6 +28,12 @@
 }
 
 .weaponByRange_form {
+    margin: auto;
+    margin-bottom: 1em;
+    width: max-content;
+}
+
+.resolve_damage_input_container {
     margin: auto;
     margin-bottom: 1em;
     width: max-content;

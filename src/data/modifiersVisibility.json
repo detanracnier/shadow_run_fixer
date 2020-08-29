@@ -37,12 +37,12 @@
     {
         "label": "Light Smoke/Fog/Rain",
         "value": [4,0,4],
-        "description": "Target is in light smoke / Fog / rain"
+        "description": "Target is in light smoke / fog / rain"
     },
     {
         "label": "Heavy Smoke/Fog/Rain",
         "value": [6,1,6],
-        "description": "Target is in heavy smoke / Fog / rain"
+        "description": "Target is in heavy smoke / fog / rain"
     },
     {
         "label": "Thermal Smoke",
