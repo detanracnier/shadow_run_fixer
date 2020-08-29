@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './targetNumber.scss';
 
 export default function TargetNumber() {
     const rangeModifier = useSelector(state => state.rangeList.rangeModifier);

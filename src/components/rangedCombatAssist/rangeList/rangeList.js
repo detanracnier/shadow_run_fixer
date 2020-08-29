@@ -1,13 +1,12 @@
 import React from 'react';
-import firearmsRangeList from '../../data/firearmsRangeList.json';
-import heavyweaponsRangeList from '../../data/heavyweaponsRangeList.json';
-import impactRangeList from '../../data/impactRangeList.json';
+import firearmsRangeList from '../../../data/firearmsRangeList.json';
+import heavyweaponsRangeList from '../../../data/heavyweaponsRangeList.json';
+import impactRangeList from '../../../data/impactRangeList.json';
 import TargetNumber from '../targetNumber/targetNumber';
 import { useSelector, useDispatch } from 'react-redux';
-import { rangeButtonClicked, rangeHeaderClicked, strengthInputChanged } from '../../actions/rangeList';
-import { combatAssistMenuButtonClicked } from '../../actions/combatAssist'
-import './rangeList.scss';
-import '../combatAssist/combatAssist.scss';
+import { rangeButtonClicked, rangeHeaderClicked, strengthInputChanged } from '../../../actions/rangeList';
+import { rangedCombatAssistMenuButtonClicked, rangedCombatAssistResetButtonClicked } from '../../../actions/rangedCombatAssist';
+import '../rangedCombatAssist.scss';
 
 export default function RangeList() {
     const currentMenuIndex = useSelector(state => state.rangedCombatAssist.activeMenuIndex)
@@ -47,17 +46,27 @@ export default function RangeList() {
     }
     return(
         <React.Fragment>
-            <div className="menu_button_disabled">
-                &lt;&lt;Previous
+            <div className="menu_nav">
+                <div className="menu_button_disabled">
+                    &lt;&lt;Previous
+                </div>
+                <div className="menu_button" onClick={() => {
+                    dispatch(rangedCombatAssistResetButtonClicked())
+                }}>
+                    Reset
+                </div>
+                <div className={activeRange === '' ? "menu_button_disabled" : "menu_button"} onClick={() => {
+                    dispatch(rangedCombatAssistMenuButtonClicked(currentMenuIndex + 1))
+                }}>
+                    Next&gt;&gt;
+                </div>
             </div>
-            <div className={activeRange === '' ? "menu_button_disabled" : "menu_button"} onClick={() => {
-                dispatch(combatAssistMenuButtonClicked(currentMenuIndex + 1))
-            }}>
-                Next&gt;&gt;
+            <div className="instructions_container">
+                <p className="instructions">Select your targets range</p>
+                <TargetNumber />
             </div>
-            <div className="instructions">Select your targets range</div>
-            <TargetNumber />
-            <div className='contact'>
+
+            <div className='primary_container'>
                 <p>Range Modifiers</p>
                 <table className="rangelist_table">
                     <thead>
@@ -90,7 +99,7 @@ export default function RangeList() {
                             </td>
                             <td colSpan='2'>
                                 <label><span className="tiny_text">For projectiles</span><br />Input your strength: </label>
-                                <input className="input_text" type="text" id="strengthInput" name="strength" value={playerStrength} onChange={(event) => {
+                                <input className="center_text" type="text" id="strengthInput" name="strength" value={playerStrength} onChange={(event) => {
                                     const value = event.target.value;
                                     if(!isNaN(value)){
                                         dispatch(strengthInputChanged(value))

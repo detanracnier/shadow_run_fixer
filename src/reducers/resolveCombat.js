@@ -8,6 +8,17 @@ const ResolveCombatReducer = (state = {
     targetArmor: 0,
 }, action) => {
     switch(action.type){
+        case "RANGEDCOMBATASSIST_RESET_BUTTON_CLICKED":
+            return {
+                ...state,
+                attackerSuccess: 0,
+                dodgeSuccess: 0,
+                resistDamageSuccess: 0,
+                weaponSelected: "",
+                weaponPower: false,
+                weaponDamage: false,
+                targetArmor: 0,
+            }
         case "RESOLVE_ATTACK_DECREASE_BUTTON_CLICKED":
             return {
                 ...state,

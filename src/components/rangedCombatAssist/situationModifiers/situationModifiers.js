@@ -1,12 +1,12 @@
 import React from 'react';
 import TargetNumber from '../targetNumber/targetNumber';
 import DropdownList from './dropdownList';
-import modifiersAiming from '../../data/modifiersAiming.json';
-import modifiersAttacker from '../../data/modifiersAttacker.json';
-import modifiersRecoil from '../../data/modifiersRecoil.json';
-import modifiersTarget from '../../data/modifiersTarget.json';
-import modifiersVisibility from '../../data/modifiersVisibility.json';
-import { combatAssistMenuButtonClicked } from '../../actions/combatAssist'
+import modifiersAiming from '../../../data/modifiersAiming.json';
+import modifiersAttacker from '../../../data/modifiersAttacker.json';
+import modifiersRecoil from '../../../data/modifiersRecoil.json';
+import modifiersTarget from '../../../data/modifiersTarget.json';
+import modifiersVisibility from '../../../data/modifiersVisibility.json';
+import { rangedCombatAssistMenuButtonClicked, rangedCombatAssistResetButtonClicked } from '../../../actions/rangedCombatAssist';
 import {
 	recoilDropdownChanged,
 	recoilMultiplierClicked,
@@ -23,10 +23,9 @@ import {
 	smartlinkClicked,
 	smartgogglesClicked,
 	lasersightClicked,
-} from '../../actions/situationModifiers';
+} from '../../../actions/situationModifiers';
 import { useSelector, useDispatch } from 'react-redux';
-import './situationModifiers.scss';
-import '../combatAssist/combatAssist.scss';
+import '../rangedCombatAssist.scss';
 
 
 
@@ -43,25 +42,37 @@ export default function SituationModifiers() {
 
 	return(
 		<React.Fragment>
-			<div className="menu_button" onClick={() => {
-                dispatch(combatAssistMenuButtonClicked(currentMenuIndex - 1))
-            }}>
-                &lt;&lt;Previous
-            </div>
-            <div className="menu_button" onClick={() => {
-                dispatch(combatAssistMenuButtonClicked(currentMenuIndex + 1))
-            }}>
-                Next&gt;&gt;
-            </div>
-			<div className="instructions">Select which modifiers apply</div>
-			<TargetNumber />
-			<div className='situationModifiers_container'>
+			<div className="menu_nav">
+				<div className="menu_button" onClick={() => {
+					dispatch(rangedCombatAssistMenuButtonClicked(currentMenuIndex - 1))
+				}}>
+					&lt;&lt;Previous
+				</div>
+				<div className="menu_button" onClick={() => {
+					dispatch(rangedCombatAssistResetButtonClicked())
+				}}>
+					Reset
+				</div>
+				<div className="menu_button" onClick={() => {
+					dispatch(rangedCombatAssistMenuButtonClicked(currentMenuIndex + 1))
+				}}>
+					Next&gt;&gt;
+				</div>
+			</div>
+			<div className="instructions_container">
+                <p className="instructions">Select which modifiers apply</p>
+				<TargetNumber />
+			</div>
+			<div className='primary_container'>
 				<p>Situation Modifiers</p>
-				<table className="situationModifiers_table">
-					<thead>
-						<tr></tr>
+				<table>
+					<thead className="no_height">
+						<th></th>
+						<th id="dropdown_width"></th>
+						<th></th>
+						<th></th>
 					</thead>
-					<tbody className="situationModifiers_table_body">
+					<tbody>
 						<tr>
 							<td className='keep-left'>Recoil</td>
 							<td>
@@ -76,6 +87,7 @@ export default function SituationModifiers() {
 									dispatch(recoilMultiplierClicked())
 								}}></input><p className="display_inline" >I am using a Heavy Weapon</p>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Attacker Movement</td>
@@ -86,6 +98,8 @@ export default function SituationModifiers() {
 									dropdownAction={attackerMovementDropdownChanged}
 								/>
 							</td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Attacker Stunned</td>
@@ -96,6 +110,8 @@ export default function SituationModifiers() {
 									dropdownAction={attackerStunDropdownChanged}
 								/>
 							</td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Attacker Wounded</td>
@@ -106,6 +122,8 @@ export default function SituationModifiers() {
 									dropdownAction={attackerWoundDropdownChanged}
 								/>
 							</td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Attacker in Melee</td>
@@ -116,6 +134,8 @@ export default function SituationModifiers() {
 									dropdownAction={attackerMeleeDropdownChanged}
 								/>
 							</td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Attacker Aiming</td>
@@ -126,6 +146,8 @@ export default function SituationModifiers() {
 									dropdownAction={attackerAimDropdownChanged}
 								/>
 							</td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Target Movement</td>
@@ -141,6 +163,7 @@ export default function SituationModifiers() {
 									dispatch(targetCoverClicked())
 								}}></input><p className="display_inline" >Target is in cover</p>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td className='keep-left'>Visibility</td>

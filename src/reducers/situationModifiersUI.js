@@ -16,6 +16,25 @@ const SituationModifiersUIReducer = (state = {
     visibilityDropdown: "You can see your target",
 }, action) => {
     switch(action.type){
+        case "RANGEDCOMBATASSIST_RESET_BUTTON_CLICKED":
+            return {
+                ...state,
+                targetCover: false,
+                recoilMultiplier: false,
+                lowLight: false,
+                thermographic: false,
+                smartlink: false,
+                smartgoggles: false,
+                lasersight: false,
+                recoilDropdown: "You have no recoil",
+                attackerMovementDropdown: "You are not moving",
+                attackerStunDropdown: "You are not stunned",
+                attackerWoundDropdown: "You are not wounded",
+                attackerMeleeDropdown: "You are not in melee combat",
+                attackerAimDropdown: "You are not aiming",
+                targetMovementDropdown: "Target is stationary",
+                visibilityDropdown: "You can see your target",
+            }
         case "RECOIL_DROPDOWN_CHANGED":
             return {
                 ...state,

@@ -2,7 +2,7 @@
     {
         "type": "melee",
         "label": "Attacker not in melee combat",
-        "value": 2,
+        "value": 0,
         "description": "You are not in melee combat"
     },
     {

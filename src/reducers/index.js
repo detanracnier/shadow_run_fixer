@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import CombatAssistReducer from './combatAssist';
+import RangedCombatAssistReducer from './rangedCombatAssist';
 import RangeListReducer from './rangeList';
 import SituationModifiersReducer from './situationModifiers';
 import SituationModifiersUIReducer from './situationModifiersUI';
 import ResolveCombatReducer from './resolveCombat';
 
 const allReducers = combineReducers({
-    rangedCombatAssist: CombatAssistReducer,
+    rangedCombatAssist: RangedCombatAssistReducer,
     rangeList: RangeListReducer,
     modifiers: SituationModifiersReducer,
     modifiersUI: SituationModifiersUIReducer,

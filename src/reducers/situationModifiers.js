@@ -9,6 +9,18 @@ const SituationModifiersReducer = (state = {
     visibility: 0,
 }, action) => {
     switch(action.type){
+        case "RANGEDCOMBATASSIST_RESET_BUTTON_CLICKED":
+            return {
+                ...state,
+                recoil: 0,
+                attackerMovement: 0,
+                attackerStun: 0,
+                attackerWound: 0,
+                attackerMelee: 0,
+                attackerAim: 0,
+                targetMovement: -1,
+                visibility: 0,
+            }
         case "RECOIL_DROPDOWN_CHANGED":
             return {
                 ...state,
