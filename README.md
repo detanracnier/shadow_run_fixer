@@ -1,6 +1,6 @@
-#Shoadowrun fixer
+# Shoadowrun fixer
 
-this app is designed to walk users through the mechanics of ranged combat for the table-top shadowrun 3.0 system.
+This app is designed to walk users through the mechanics of ranged combat for the table-top shadowrun 3.0 system.
 
 [Deployed site](http://spencerrosio.net)
 
